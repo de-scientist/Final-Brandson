@@ -143,28 +143,6 @@ const features = [
 
 
 export default function HomePage() {
-  const [selectedService, setSelectedService] = useState<any>(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const handleAddToCart = (service: any) => {
-    addToCart({
-      id: service.id,
-      service: service.title,
-      category: service.id,
-      description: service.description,
-      quantity: 1,
-      unitPrice: parseInt(service.startingFrom.replace('KES ', '').replace(',', '')),
-      specifications: {},
-      timeline: 'Standard (3-5 days)',
-      image: service.image
-    })
-  }
-
-  const handlePreview = (service: any) => {
-    setSelectedService(service)
-    setIsModalOpen(true)
-  }
-
   return (
     <div className="min-h-screen">
       {/* Dynamic Hero Section */}
@@ -253,11 +231,10 @@ export default function HomePage() {
                     <Button
                       variant="secondary"
                       size="sm"
-                      onClick={() => handlePreview(service)}
                       className="bg-white/90 hover:bg-white text-gray-900"
                     >
                       <Eye className="mr-2 h-4 w-4" />
-                      Quick Preview
+                      View Details
                     </Button>
                   </div>
                   
@@ -306,21 +283,15 @@ export default function HomePage() {
                         <Button 
                           size="sm" 
                           variant="outline"
-                          onClick={() => handlePreview(service)}
                         >
                           <Eye className="mr-1 h-3 w-3" />
                           Preview
                         </Button>
                         <Button 
                           size="sm" 
-                          onClick={() => handleAddToCart(service)}
-                          disabled={isInCart(service.id)}
                         >
                           <ShoppingCart className="mr-1 h-3 w-3" />
-                          {isInCart(service.id) 
-                            ? `In Cart (${getItemQuantity(service.id)})`
-                            : 'Add to Cart'
-                          }
+                          Get Quote
                         </Button>
                       </div>
                     </div>
@@ -387,17 +358,6 @@ export default function HomePage() {
         </div>
       </section>
       
-      {/* Service Preview Modal */}
-      {selectedService && (
-        <ServicePreviewModal
-          service={selectedService}
-          isOpen={isModalOpen}
-          onClose={() => {
-            setIsModalOpen(false)
-            setSelectedService(null)
-          }}
-        />
-      )}
-    </div>
+      </div>
   )
 }
