@@ -4,8 +4,6 @@ import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from "@/components/theme-provider"
-import { CartProvider } from "@/contexts/cart-context"
-import { EcommerceCartProvider } from "@/contexts/ecommerce-cart-context"
 import { MainNavigation } from "@/components/main-navigation"
 import { EnhancedFooter } from "@/components/enhanced-footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -96,18 +94,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <CartProvider>
-            <EcommerceCartProvider>
-              <div className="min-h-screen flex flex-col">
-                <MainNavigation />
-                <main className="flex-1">
-                  {children}
-                </main>
-                <EnhancedFooter />
-              </div>
-              <WhatsAppButton />
-            </EcommerceCartProvider>
-          </CartProvider>
+          <div className="min-h-screen flex flex-col">
+            <MainNavigation />
+            <main className="flex-1">
+              {children}
+            </main>
+            <EnhancedFooter />
+          </div>
+          <WhatsAppButton />
         </ThemeProvider>
         <Analytics />
         <SpeedInsights />

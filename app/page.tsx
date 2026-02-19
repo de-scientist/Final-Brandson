@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
-import { useCart } from "@/contexts/cart-context"
-import { ServicePreviewModal } from "@/components/service-preview-modal"
 import {
   Package,
   Users,
@@ -145,7 +143,6 @@ const features = [
 
 
 export default function HomePage() {
-  const { addToCart, isInCart, getItemQuantity } = useCart()
   const [selectedService, setSelectedService] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
 
