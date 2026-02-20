@@ -56,65 +56,59 @@ import {
 
 const services = [
   {
-    id: "printing-stickers",
-    icon: Printer,
-    title: "Printing & Stickers",
-    description: "Banners, stickers, vehicle branding, and all your printing needs.",
-    features: ["High Quality", "Fast Delivery", "Best Prices"],
+    id: "printing-services",
+    title: "Printing Services",
+    description: "Professional printing solutions including banners, business cards, brochures, and promotional materials with vibrant colors and crisp quality.",
+    features: ["High Quality Printing", "Fast Delivery", "Competitive Pricing"],
     startingFrom: "KES 500",
     popular: true,
-    image: "/branded-corporate-t-shirts-uniform.jpg"
+    image: "/professional-banner-printing-nairobi-kenya.jpg"
   },
   {
     id: "branding-services",
-    icon: Shirt,
-    title: "Branding Services",
-    description: "T-shirts, uniforms, caps, and corporate apparel branding.",
+    title: "Corporate Branding",
+    description: "Complete branding solutions including t-shirts, uniforms, caps, and corporate apparel with custom designs.",
     features: ["Custom Designs", "Premium Materials", "Expert Installation"],
     startingFrom: "KES 800",
     popular: false,
-    image: "/professional-event-banners-displays.jpg"
+    image: "/branded-corporate-t-shirts-uniform.jpg"
   },
   {
     id: "uv-printing",
-    icon: Sparkles,
     title: "UV Printing",
-    description: "Custom promotional items, gifts, and branded merchandise.",
-    features: ["Advanced Technology", "Eco-Friendly", "Long-lasting"],
+    description: "Advanced UV printing technology for promotional items, branded merchandise, and custom products.",
+    features: ["Advanced Technology", "Eco-Friendly", "Long-lasting Results"],
     startingFrom: "KES 1,200",
     popular: true,
     isNew: true,
     image: "/uv-printed-promotional-items-bottles.jpg"
   },
   {
-    id: "signage-3d-signs",
-    icon: Building2,
+    id: "signage-services",
     title: "Signage & 3D Signs",
-    description: "Indoor and outdoor signage for businesses and buildings.",
+    description: "Indoor and outdoor signage including 3D letters, LED signs, and building signage.",
     features: ["3D Design", "LED Options", "Weather Resistant"],
     startingFrom: "KES 2,000",
     popular: false,
-    image: "/3d-company-signage-letters.jpg"
+    image: "/3d-signage-storefront-kenya.jpg"
+  },
+  {
+    id: "vehicle-branding",
+    title: "Vehicle Branding",
+    description: "Complete vehicle branding solutions including car wraps, fleet branding, and mobile advertising.",
+    features: ["Full Vehicle Wraps", "Fleet Branding", "High Quality Materials"],
+    startingFrom: "KES 15,000",
+    popular: true,
+    image: "/branded-vehicle-fleet-company-cars.jpg"
   },
   {
     id: "laser-cutting",
-    icon: Scissors,
     title: "Laser Cutting",
-    description: "Acrylic, wood cutting, engraving, and custom displays.",
+    description: "Precision laser cutting services for acrylic, wood, engraving, and custom displays.",
     features: ["Precision Cutting", "Custom Shapes", "Quick Turnaround"],
     startingFrom: "KES 300",
     popular: false,
     image: "/acrylic-menu-holders-displays.jpg"
-  },
-  {
-    id: "paper-printing",
-    icon: Layers,
-    title: "Paper Printing",
-    description: "Business cards, brochures, company profiles, and more.",
-    features: ["Premium Paper", "Full Color", "Bulk Discounts"],
-    startingFrom: "KES 100",
-    popular: false,
-    image: "/branded-vehicle-car-wrapping.jpg"
   }
 ]
 
@@ -153,42 +147,6 @@ export default function HomePage() {
         showThumbnails={true}
         height="h-[70vh]"
       />
-
-      {/* Quick Actions Bar */}
-      <section className="bg-primary text-primary-foreground py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4" />
-                <span className="text-sm">+254 701 869 821</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4" />
-                <span className="text-sm">brandsonmedia@gmail.com</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4" />
-                <span className="text-sm">Nairobi, Kenya</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <Button asChild variant="secondary" size="sm">
-                <Link href="/quote">
-                  <ShoppingCart className="mr-2 h-4 w-4" />
-                  Get Quote
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="sm" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-                <Link href="https://wa.me/254701869821" target="_blank">
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  WhatsApp
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Overview */}
       <section className="py-20 bg-background">
