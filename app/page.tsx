@@ -174,7 +174,8 @@ export default function HomePage() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 bg-card border-border h-full overflow-hidden">
+              <Link key={index} href={`/services/${service.id}`}>
+                <Card className="group hover:shadow-lg transition-all duration-300 bg-card border-border h-full overflow-hidden cursor-pointer">
                 {/* Service Image */}
                 <div className="relative aspect-video overflow-hidden">
                   <img
@@ -212,14 +213,9 @@ export default function HomePage() {
                 </div>
                 
                 <CardHeader className="pb-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
-                      <service.icon className="h-6 w-6 text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <CardTitle className="text-lg">{service.title}</CardTitle>
-                      <CardDescription className="text-sm">{service.description}</CardDescription>
-                    </div>
+                  <div className="flex-1">
+                    <CardTitle className="text-lg">{service.title}</CardTitle>
+                    <CardDescription className="text-sm">{service.description}</CardDescription>
                   </div>
                 </CardHeader>
                 <CardContent className="pt-0">
@@ -256,6 +252,7 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
+              </Link>
             ))}
           </div>
           
