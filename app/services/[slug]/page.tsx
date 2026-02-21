@@ -8,74 +8,238 @@ import { ArrowLeft, Phone, Mail, MessageCircle, CheckCircle } from "lucide-react
 const servicesData = {
   "printing-services": {
     title: "Printing Services",
-    description: "Professional printing solutions including banners, business cards, brochures, and promotional materials with vibrant colors and crisp quality.",
+    description: "Comprehensive printing solutions including banners, stickers, poly matte materials, and all your printing needs with vibrant colors and crisp quality.",
     image: "/professional-banner-printing-nairobi-kenya.jpg",
-    features: ["High Quality Printing", "Fast Delivery", "Competitive Pricing", "Custom Designs", "Bulk Orders"],
+    features: ["High Quality Printing", "Fast Delivery", "Various Materials", "Custom Sizes", "Bulk Orders"],
     startingFrom: "KES 500",
     gallery: [
       "/professional-banner-printing-nairobi-kenya.jpg",
       "/professional-event-banners-displays.jpg",
       "/modern-printing-press-industrial.jpg"
+    ],
+    subServices: [
+      "Banners & Large Format Printing",
+      "Stickers & Labels",
+      "Poly Matte Materials",
+      "Custom Printing",
+      "Bulk Orders"
+    ]
+  },
+  "banners": {
+    title: "Banners",
+    description: "All types of banners including roll up, tear drop, pop up, backdrop, telescopic, and road banners for any occasion.",
+    image: "/professional-roll-up-banner-stand.jpg",
+    features: ["Roll Up Banners", "Tear Drop Banners", "Pop Up Banners", "Backdrop Banners", "Telescopic Banners", "Road Banners"],
+    startingFrom: "KES 1,500",
+    gallery: [
+      "/professional-roll-up-banner-stand.jpg",
+      "/professional-event-banners-displays.jpg",
+      "/event-backdrop.jpg"
+    ],
+    subServices: [
+      "Roll Up Banners",
+      "Tear Drop Banners",
+      "Pop Up Banners",
+      "Backdrop Banners",
+      "Telescopic Banners",
+      "Road Banners"
+    ]
+  },
+  "stickers": {
+    title: "Stickers & Labels",
+    description: "Wall branding stickers, car wrapping, branding stickers, label stickers, packaging stickers, and contour cutting stickers.",
+    image: "/branded-pens.jpg",
+    features: ["Wall Branding", "Car Wrapping", "Labels", "Packaging", "Contour Cutting"],
+    startingFrom: "KES 200",
+    gallery: [
+      "/branded-pens.jpg",
+      "/branded-vehicle-car-wrapping-kenya.jpg",
+      "/promotional-printing.jpg"
+    ],
+    subServices: [
+      "Wall Branding Stickers",
+      "Car Wrapping & Branding Stickers",
+      "Labels Stickers",
+      "Packaging Stickers",
+      "Contour Cutting Stickers"
     ]
   },
   "branding-services": {
-    title: "Corporate Branding",
-    description: "Complete branding solutions including t-shirts, uniforms, caps, and corporate apparel with custom designs.",
+    title: "Branding Services",
+    description: "Complete apparel branding including t-shirts, screen printing, embroidery, and various clothing items.",
     image: "/branded-corporate-t-shirts-uniform.jpg",
-    features: ["Custom Designs", "Premium Materials", "Expert Installation", "Brand Consultation", "Quality Assurance"],
+    features: ["T-Shirt Branding", "Screen Printing", "Embroidery", "Dust Coats", "Aprons", "Overalls", "Jackets", "Hoodies", "Caps", "Hats"],
     startingFrom: "KES 800",
     gallery: [
       "/branded-corporate-t-shirts-uniform.jpg",
       "/corporate-branding-kenya-business.jpg",
       "/corporate-event-branding-kenya.jpg"
+    ],
+    subServices: [
+      "T-Shirts Branding",
+      "Screen and Embroidery Services",
+      "Dust Coats",
+      "Aprons",
+      "Overalls",
+      "Jackets",
+      "Hoodies",
+      "Caps",
+      "Hats",
+      "General Apparel"
     ]
   },
   "uv-printing": {
-    title: "UV Printing",
-    description: "Advanced UV printing technology for promotional items, branded merchandise, and custom products.",
+    title: "UV Printing Services",
+    description: "Custom UV printing on water bottles, notebooks, pens, gift items, mugs, tumblers, clocks, and promotional merchandise.",
     image: "/uv-printed-promotional-items-bottles.jpg",
-    features: ["Advanced Technology", "Eco-Friendly", "Long-lasting Results", "High Precision", "Versatile Applications"],
+    features: ["Water Bottles", "Notebooks", "Pens", "Gift Items", "Thermo Mugs", "Tumblers", "Clocks", "Desktop Organisers"],
     startingFrom: "KES 1,200",
     gallery: [
       "/uv-printed-promotional-items-bottles.jpg",
       "/uv-printed-branded-water-bottles.jpg",
       "/uv-printing-promotional-products.jpg"
+    ],
+    subServices: [
+      "Water Bottles",
+      "Notebooks and Diaries",
+      "Pens",
+      "Customised Gift Items",
+      "Thermo Mugs",
+      "Tumblers",
+      "Clocks",
+      "Desktop Organisers",
+      "Promotional Merchandise",
+      "Marketing Materials",
+      "Giveaways"
     ]
   },
-  "signage-services": {
-    title: "Signage & 3D Signs",
-    description: "Indoor and outdoor signage including 3D letters, LED signs, and building signage.",
-    image: "/3d-signage-storefront-kenya.jpg",
-    features: ["3D Design", "LED Options", "Weather Resistant", "Custom Fabrication", "Installation Service"],
-    startingFrom: "KES 2,000",
+  "hotel-conferences": {
+    title: "Hotel & Conference Care",
+    description: "Branded conference materials including pens, notepads, notebooks, attendance registers, catalogues, and training manuals.",
+    image: "/corporate-event-branding-kenya.jpg",
+    features: ["Conference Pens", "Notepads", "Notebooks", "Attendance Registers", "Catalogues", "Training Manuals"],
+    startingFrom: "KES 5,000",
     gallery: [
-      "/3d-signage-storefront-kenya.jpg",
-      "/3d-company-signage-letters.jpg",
-      "/3d-restaurant-signage-illuminated.jpg"
+      "/corporate-event-branding-kenya.jpg",
+      "/corporate-conference-event-branding.jpg",
+      "/promotional.jpg"
+    ],
+    subServices: [
+      "Branded Conference Pens",
+      "Loose Leaf Notepads",
+      "Notebooks",
+      "Attendance Registers",
+      "Catalogues",
+      "Training Manuals",
+      "Guides"
     ]
   },
-  "vehicle-branding": {
-    title: "Vehicle Branding",
-    description: "Complete vehicle branding solutions including car wraps, fleet branding, and mobile advertising.",
-    image: "/branded-vehicle-fleet-company-cars.jpg",
-    features: ["Full Vehicle Wraps", "Fleet Branding", "High Quality Materials", "Mobile Advertising", "Professional Installation"],
-    startingFrom: "KES 15,000",
+  "training-centers": {
+    title: "Training Centers Support",
+    description: "Complete training support materials including manuals, awards, badges, tags, winner awards, and certificates.",
+    image: "/corporate-conference-event-branding.jpg",
+    features: ["Training Manuals", "Custom Awards", "Badges & Tags", "Winner Awards", "Certificates"],
+    startingFrom: "KES 3,000",
     gallery: [
-      "/branded-vehicle-fleet-company-cars.jpg",
-      "/branded-vehicle-car-wrapping-kenya.jpg",
-      "/vehicle-branding-car-wrap-kenya.jpg"
+      "/corporate-conference-event-branding.jpg",
+      "/promotional.jpg",
+      "/professional-team-avatar.jpg"
+    ],
+    subServices: [
+      "Training Manuals",
+      "Customised Awards",
+      "Customised Badges and Tags",
+      "Winner Awards",
+      "Participants Certificates"
+    ]
+  },
+  "paper-printing": {
+    title: "Paper Printing Services",
+    description: "Professional paper printing including training guides, letterheads, journals, diaries, and company profiles.",
+    image: "/promotional-printing.jpg",
+    features: ["Training Guides", "Letterheads", "Journals", "Diaries", "Company Profiles"],
+    startingFrom: "KES 1,000",
+    gallery: [
+      "/promotional-printing.jpg",
+      "/modern-printing-press-industrial.jpg",
+      "/modern-printing-press-industrial2.jpg"
+    ],
+    subServices: [
+      "Training and Conference Guides",
+      "Office Letterheads Design and Print",
+      "Journals and Diaries",
+      "Design and Print of Company Profiles"
     ]
   },
   "laser-cutting": {
-    title: "Laser Cutting",
-    description: "Precision laser cutting services for acrylic, wood, engraving, and custom displays.",
+    title: "Laser Cutting & Engraving",
+    description: "Precision laser cutting and engraving on acrylic, wood, custom logos, and various materials.",
     image: "/acrylic-menu-holders-displays.jpg",
-    features: ["Precision Cutting", "Custom Shapes", "Quick Turnaround", "Various Materials", "Detailed Engraving"],
+    features: ["Acrylic/Perspex", "2D/3D Logos", "Wood Cutting", "Door Signs", "Notebook Engraving", "Door Hangers", "Room Signs"],
     startingFrom: "KES 300",
     gallery: [
       "/acrylic-menu-holders-displays.jpg",
       "/acrylic-menu-holders.jpg",
       "/3d-printing.jpg"
+    ],
+    subServices: [
+      "Acrylic/Perspex Cutting",
+      "Logos 2D and 3D Customisation",
+      "Wood Cutting and Wooden Key Holders",
+      "Wooden Door Signs",
+      "Labels",
+      "Notebooks and Diaries Laser Engraving",
+      "Door Hangers (Do Not Disturb, Meeting in Progress, Occupied, Room Service)",
+      "Acrylic Room Key Holders",
+      "Door Signs",
+      "Floor Labels",
+      "Building Names with Acrylic",
+      "Customised Items"
+    ]
+  },
+  "signages": {
+    title: "Signages & 3D Signs",
+    description: "Quality durable 3D signs for all businesses including restaurants, hotels, malls, and gas stations.",
+    image: "/3d-signage-storefront-kenya.jpg",
+    features: ["3D Signs", "Restaurant Signs", "Hotel Signs", "Building Signs", "Mall Signs", "Supermarket Signs", "Gas Station Signs"],
+    startingFrom: "KES 2,000",
+    gallery: [
+      "/3d-signage-storefront-kenya.jpg",
+      "/3d-company-signage-letters.jpg",
+      "/3d-restaurant-signage-illuminated.jpg"
+    ],
+    subServices: [
+      "3D Signs for All Kind of Business",
+      "Big and Small Signs",
+      "Restaurant Signs",
+      "Barbershop Signs",
+      "Hotel Signs",
+      "New and Existing Buildings",
+      "Malls",
+      "Supermarkets",
+      "Gas Stations"
+    ]
+  },
+  "acrylic-bending": {
+    title: "Acrylic Bending Services",
+    description: "Precise acrylic bending for menu holders, price tag holders, promotional materials, and custom designs.",
+    image: "/acrylic-menu-holders.jpg",
+    features: ["Menu Holders", "Price Tag Holders", "Promotional Materials", "Food & Drink Displays", "Custom Designs"],
+    startingFrom: "KES 1,500",
+    gallery: [
+      "/acrylic-menu-holders.jpg",
+      "/acrylic-menu-holders-displays.jpg",
+      "/3d-printing.jpg"
+    ],
+    subServices: [
+      "Restaurant Menu Holders",
+      "Price Tag Holders for Electronic Shops",
+      "Supermarkets",
+      "Promotional Materials for Foods",
+      "Drinks",
+      "Offers",
+      "New Products",
+      "Clearance Sales"
     ]
   }
 }
@@ -181,6 +345,28 @@ export default async function ServicePage({ params }: PageProps) {
                 </div>
               </CardContent>
             </Card>
+
+            {/* Sub-Services */}
+            {service.subServices && service.subServices.length > 0 && (
+              <Card>
+                <CardHeader>
+                  <CardTitle>Services Included</CardTitle>
+                  <CardDescription>
+                    Detailed breakdown of our {service.title.toLowerCase()} offerings
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    {service.subServices.map((subService, index) => (
+                      <div key={index} className="flex items-center gap-3 p-3 rounded-lg border bg-muted/50">
+                        <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                        <span className="text-sm font-medium">{subService}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
           </div>
 
           {/* Sidebar */}
