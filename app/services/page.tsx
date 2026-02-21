@@ -8,57 +8,102 @@ const services = [
   {
     id: "printing-services",
     title: "Printing Services",
-    description: "Professional printing solutions including banners, business cards, brochures, and promotional materials with vibrant colors and crisp quality.",
-    features: ["High Quality Printing", "Fast Delivery", "Competitive Pricing", "Custom Designs", "Bulk Orders"],
+    description: "Comprehensive printing solutions including banners, stickers, poly matte materials, and all your printing needs with vibrant colors and crisp quality.",
+    features: ["High Quality Printing", "Fast Delivery", "Various Materials", "Custom Sizes", "Bulk Orders"],
     startingFrom: "KES 500",
     popular: true,
     image: "/professional-banner-printing-nairobi-kenya.jpg"
   },
   {
-    id: "branding-services",
-    title: "Corporate Branding",
-    description: "Complete branding solutions including t-shirts, uniforms, caps, and corporate apparel with custom designs.",
-    features: ["Custom Designs", "Premium Materials", "Expert Installation", "Brand Consultation", "Quality Assurance"],
-    startingFrom: "KES 800",
+    id: "banners",
+    title: "Banners",
+    description: "All types of banners including roll up, tear drop, pop up, backdrop, telescopic, and road banners for any occasion.",
+    features: ["Roll Up Banners", "Tear Drop Banners", "Pop Up Banners", "Backdrop Banners", "Telescopic Banners", "Road Banners"],
+    startingFrom: "KES 1,500",
+    popular: true,
+    image: "/professional-roll-up-banner-stand.jpg"
+  },
+  {
+    id: "stickers",
+    title: "Stickers & Labels",
+    description: "Wall branding stickers, car wrapping, branding stickers, label stickers, packaging stickers, and contour cutting stickers.",
+    features: ["Wall Branding", "Car Wrapping", "Labels", "Packaging", "Contour Cutting"],
+    startingFrom: "KES 200",
     popular: false,
+    image: "/branded-pens.jpg"
+  },
+  {
+    id: "branding-services",
+    title: "Branding Services",
+    description: "Complete apparel branding including t-shirts, screen printing, embroidery, and various clothing items.",
+    features: ["T-Shirt Branding", "Screen Printing", "Embroidery", "Dust Coats", "Aprons", "Overalls", "Jackets", "Hoodies", "Caps", "Hats"],
+    startingFrom: "KES 800",
+    popular: true,
     image: "/branded-corporate-t-shirts-uniform.jpg"
   },
   {
     id: "uv-printing",
-    title: "UV Printing",
-    description: "Advanced UV printing technology for promotional items, branded merchandise, and custom products.",
-    features: ["Advanced Technology", "Eco-Friendly", "Long-lasting Results", "High Precision", "Versatile Applications"],
+    title: "UV Printing Services",
+    description: "Custom UV printing on water bottles, notebooks, pens, gift items, mugs, tumblers, clocks, and promotional merchandise.",
+    features: ["Water Bottles", "Notebooks", "Pens", "Gift Items", "Thermo Mugs", "Tumblers", "Clocks", "Desktop Organisers"],
     startingFrom: "KES 1,200",
     popular: true,
     isNew: true,
     image: "/uv-printed-promotional-items-bottles.jpg"
   },
   {
-    id: "signage-services",
-    title: "Signage & 3D Signs",
-    description: "Indoor and outdoor signage including 3D letters, LED signs, and building signage.",
-    features: ["3D Design", "LED Options", "Weather Resistant", "Custom Fabrication", "Installation Service"],
-    startingFrom: "KES 2,000",
+    id: "hotel-conferences",
+    title: "Hotel & Conference Care",
+    description: "Branded conference materials including pens, notepads, notebooks, attendance registers, catalogues, and training manuals.",
+    features: ["Conference Pens", "Notepads", "Notebooks", "Attendance Registers", "Catalogues", "Training Manuals"],
+    startingFrom: "KES 5,000",
     popular: false,
-    image: "/3d-signage-storefront-kenya.jpg"
+    image: "/corporate-event-branding-kenya.jpg"
   },
   {
-    id: "vehicle-branding",
-    title: "Vehicle Branding",
-    description: "Complete vehicle branding solutions including car wraps, fleet branding, and mobile advertising.",
-    features: ["Full Vehicle Wraps", "Fleet Branding", "High Quality Materials", "Mobile Advertising", "Professional Installation"],
-    startingFrom: "KES 15,000",
-    popular: true,
-    image: "/branded-vehicle-fleet-company-cars.jpg"
+    id: "training-centers",
+    title: "Training Centers Support",
+    description: "Complete training support materials including manuals, awards, badges, tags, winner awards, and certificates.",
+    features: ["Training Manuals", "Custom Awards", "Badges & Tags", "Winner Awards", "Certificates"],
+    startingFrom: "KES 3,000",
+    popular: false,
+    image: "/corporate-conference-event-branding.jpg"
+  },
+  {
+    id: "paper-printing",
+    title: "Paper Printing Services",
+    description: "Professional paper printing including training guides, letterheads, journals, diaries, and company profiles.",
+    features: ["Training Guides", "Letterheads", "Journals", "Diaries", "Company Profiles"],
+    startingFrom: "KES 1,000",
+    popular: false,
+    image: "/promotional-printing.jpg"
   },
   {
     id: "laser-cutting",
-    title: "Laser Cutting",
-    description: "Precision laser cutting services for acrylic, wood, engraving, and custom displays.",
-    features: ["Precision Cutting", "Custom Shapes", "Quick Turnaround", "Various Materials", "Detailed Engraving"],
+    title: "Laser Cutting & Engraving",
+    description: "Precision laser cutting and engraving on acrylic, wood, custom logos, and various materials.",
+    features: ["Acrylic/Perspex", "2D/3D Logos", "Wood Cutting", "Door Signs", "Notebook Engraving", "Door Hangers", "Room Signs"],
     startingFrom: "KES 300",
     popular: false,
     image: "/acrylic-menu-holders-displays.jpg"
+  },
+  {
+    id: "signages",
+    title: "Signages & 3D Signs",
+    description: "Quality durable 3D signs for all businesses including restaurants, hotels, malls, and gas stations.",
+    features: ["3D Signs", "Restaurant Signs", "Hotel Signs", "Building Signs", "Mall Signs", "Supermarket Signs", "Gas Station Signs"],
+    startingFrom: "KES 2,000",
+    popular: true,
+    image: "/3d-signage-storefront-kenya.jpg"
+  },
+  {
+    id: "acrylic-bending",
+    title: "Acrylic Bending Services",
+    description: "Precise acrylic bending for menu holders, price tag holders, promotional materials, and custom designs.",
+    features: ["Menu Holders", "Price Tag Holders", "Promotional Materials", "Food & Drink Displays", "Custom Designs"],
+    startingFrom: "KES 1,500",
+    popular: false,
+    image: "/acrylic-menu-holders.jpg"
   }
 ]
 
